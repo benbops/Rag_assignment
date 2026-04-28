@@ -1,0 +1,17 @@
+qdrant:
+  host: "localhost"
+  port: 6333
+  collection_name: "gfg_rag_docs"
+  vector_size: 768
+  batch_size: 64
+
+ollama:
+  llm_model: "llama3.2"
+  embedding_model: "nomic-embed-text"
+  base_url: "http://localhost:11434"
+
+data:
+  raw_output: "data/raw_documents.jsonl"
+  clean_output: "data/clean_documents.jsonl"
+  chunks_output: "data/chunks.jsonl"
+  embedded_output: "data/chunks_embedded.jsonl"
